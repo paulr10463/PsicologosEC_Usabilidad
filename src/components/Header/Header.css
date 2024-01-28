@@ -1,0 +1,77 @@
+.Header{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0px 60px;
+    font-size: 24px;
+    font-weight: 500;
+    border: 1px solid var(--primary-2-color)    ;
+}
+
+.Header__LogoContainer__Logo{
+    height: 100%;
+}
+
+.Header__LogoContainer{
+    padding-top: 20px 0px 20px 0px;
+    height: 80%;
+}
+
+.Header__ul{
+    display: flex;
+    list-style: none;
+
+    li{
+        margin-left: 20px;
+        
+        a{
+            text-decoration: none;
+            color: var(--primary-2-color);
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease-in-out;
+        }
+        a:hover{
+            color: var(--primary-1-color);
+        }
+        .fa-chevron-down{
+            margin-left: 5px;
+        }
+    }
+}
+
+.Header__buttons{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 20px;
+
+    button{
+        margin-left: 20px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--primary-2-color);
+    }
+    button:hover{
+        color: var(--primary-1-color);
+    }
+    .SignupButton{
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 10px 20px;
+        border-radius: var(--border-radius);
+        transition: all 0.3s ease-in-out;
+    }
+    .SignupButton:hover{
+        color: var(--terciary-color);
+        background-color: var(--secondary-color-hover);
+    }
+}
