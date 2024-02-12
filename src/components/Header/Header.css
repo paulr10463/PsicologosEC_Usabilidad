@@ -1,77 +1,45 @@
-.Header{
-    display: flex;
-    align-items: center;
-    height: 80px;
-    padding: 0px 60px;
-    font-size: 24px;
-    font-weight: 500;
-    border: 1px solid var(--primary-2-color)    ;
+.navbar__button {
+    margin-right: 0.75rem; /* Equivalente a Tailwind: mr-3 */
+    border-radius: 0.375rem; /* Equivalente a Tailwind: rounded */
+    padding: 0.4rem 1.0rem; /* Equivalente a Tailwind: px-6 pb-2 pt-2.5 */
+    font-size: 0.75em; /* Equivalente a Tailwind: text-xs */
+    font-weight: 500; /* Equivalente a Tailwind: font-medium */
+    color: var(--primary-2-color); /* Equivalente a Tailwind: text-primary */
+    transition-property: background-color, color; /* Equivalente a Tailwind: transition */
+    transition-duration: 0.15s; /* Equivalente a Tailwind: duration-150 */
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Equivalente a Tailwind: ease-in-out */
+    max-height: 80px;
 }
 
-.Header__LogoContainer__Logo{
-    height: 100%;
-}
+  .navbar__alternativeButton {
+    background-color: var(--secondary-1-color);
+    margin-right: 0.75rem; /* Equivalente a Tailwind: mr-3 */
+    border-radius: 0.375rem; /* Equivalente a Tailwind: rounded */
+    padding: 0.4rem 1.5rem;
+    font-size: 0.75rem; /* Equivalente a Tailwind: text-xs */
+    font-weight: 500; /* Equivalente a Tailwind: font-medium */
+    color: white; /* Equivalente a Tailwind: text-primary */
+    transition-property: background-color, color; /* Equivalente a Tailwind: transition */
+    transition-duration: 0.15s; /* Equivalente a Tailwind: duration-150 */
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Equivalente a Tailwind: ease-in-out */
+    max-height: 60px;
+    
+  }
 
-.Header__LogoContainer{
-    padding-top: 20px 0px 20px 0px;
-    height: 80%;
-}
+  .navbar__button:hover {
+    background-color: var(--terciary-1-color); /* Equivalente a Tailwind: hover:bg-neutral-100 */
+    color: var(--primary-1-color); /* Equivalente a Tailwind: hover:text-primary-600 */
+  }
+  
+  .navbar__alternativeButton:hover {
+    background-color: var(--secondary-2-color);
+    color: var(--terciary-1-color);
+  }
 
-.Header__ul{
-    display: flex;
-    list-style: none;
-
-    li{
-        margin-left: 20px;
-        
-        a{
-            text-decoration: none;
-            color: var(--primary-2-color);
-            display: flex;
-            align-items: center;
-            transition: color 0.3s ease-in-out;
-        }
-        a:hover{
-            color: var(--primary-1-color);
-        }
-        .fa-chevron-down{
-            margin-left: 5px;
-        }
-    }
-}
-
-.Header__buttons{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 0px;
-    padding-right: 0px;
-    padding-left: 20px;
-
-    button{
-        margin-left: 20px;
-        background-color: white;
-        border: none;
-        cursor: pointer;
-        font-size: 24px;
-        font-weight: 500;
-        color: var(--primary-2-color);
-    }
-    button:hover{
-        color: var(--primary-1-color);
-    }
-    .SignupButton{
-        background-color: var(--secondary-color);
-        color: white;
-        padding: 10px 20px;
-        border-radius: var(--border-radius);
-        transition: all 0.3s ease-in-out;
-    }
-    .SignupButton:hover{
-        color: var(--terciary-color);
-        background-color: var(--secondary-color-hover);
-    }
-}
+  .navbar__button:focus {
+    outline: none; /* Equivalente a Tailwind: focus:outline-none */
+  }
+  
+  .navbar__button:active {
+    color: #2b6cb0; /* Equivalente a Tailwind: active:text-primary-700 */
+  }
