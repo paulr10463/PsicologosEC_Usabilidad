@@ -12,6 +12,7 @@ export default {
           '2': '#007099',
           '3': '#33C9FF',
           '4': '#005979',
+          '5': '#008BBC',
         },
         secondary: {
           '1': '#6F5F9E',
@@ -20,6 +21,12 @@ export default {
         terciary: {
           '1': '#F2F2F2',
           '2': '#A9A9A9',
+        },
+        grey:{
+          '1': '#636E73'
+        },
+        borderColor: {
+          '1': '#EAEAEA',
         },
       },
       borderRadius: {

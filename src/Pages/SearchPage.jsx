@@ -1,7 +1,7 @@
 import Header from '../components/Header/header'
 import SearchBar from '../components/SearchBar/SearchBar'
-import MenuResponsive from '../components/MenuResposive/MenuResponsive';
-
+import PsychologistSearchElement from '../components/PsychologistSearchElement/PsychologistSearchElement';
+import Footer from '../components/Footer/Footer';
 
 
 export default function SearchPage() {
@@ -9,7 +9,11 @@ export default function SearchPage() {
     return (
        <>
          <Header/>
-         
+         <SearchBar/>
+         <PsychologistSearchElement/>
+         <PsychologistSearchElement/>
+         <PsychologistSearchElement/>
+         <Footer/>
        </>
     );
     }

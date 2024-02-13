@@ -1,20 +1,20 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faBars } from '@fortawesome/free-solid-svg-icons'
-import { Collapse, Dropdown, Ripple, initTE } from 'tw-elements';
+import { Collapse, Dropdown, Ripple, Rating, initTE } from 'tw-elements';
 import { useEffect } from 'react';
 import './Header.css';
 
 export default function Header() {
   useEffect(() => {
-    initTE({ Collapse, Dropdown, Ripple });
+    initTE({ Collapse, Dropdown, Ripple, Rating });
   }, []);
 
   return (
     <nav
-      className="flex w-full flex-wrap items-center justify-between  text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 "
+      className="flex w-full flex-wrap items-center justify-between text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 "
       data-te-navbar-ref>
-      <div className="  flex w-full flex-wrap justify-between px-3">
+      <div className="flex w-full flex-wrap justify-between px-3">
           <a
             className="mx-2 flex"
             href="#">
@@ -49,7 +49,7 @@ export default function Header() {
               className="block mt-3 lg:mt-0 ml-3"
               data-te-nav-item-ref>
               <a
-                className="navbar__button "
+                className="navbar__button dark:text-neutral-200"
                 aria-current="page"
                 href="#"
                 data-te-nav-link-ref
@@ -57,15 +57,15 @@ export default function Header() {
               >
             </li>
             <li>
-              <div className="relative mt-3  ml-3 lg:mt-0 lg:ml-0" >
+              <div className="relative mt-3  ml-3 lg:mt-0 lg:ml-0 " >
                 <a
-                  className="navbar__button"
+                  className="navbar__button dark:text-neutral-200"
                   href="#"
                   data-te-dropdown-toggle-ref
                   aria-expanded="false"
                   >
                   Compañía
-                  <span className="ml-2">
+                  <span className="ml-2 dark:text-neutral-200">
                     <FontAwesomeIcon icon={faChevronDown} />
                   </span>
                 </a>
@@ -105,7 +105,7 @@ export default function Header() {
               className="relative mt-3 ml-3 lg:mt-0 lg:ml-0"
               data-te-nav-item-ref>
               <a
-                className="navbar__button"
+                className="navbar__button dark:text-neutral-200"
                 aria-current="page"
                 href="#"
                 data-te-nav-link-ref
@@ -117,13 +117,13 @@ export default function Header() {
           <div className="flex flex-column items-center my-3 ml-3 lg:my-0 lg:flex-row">
             <button
               data-te-ripple-init
-              data-te-ripple-color="light"
-              className="navbar__button block relative lg:my-auto">
+              data-te-ripple-color="dark"
+              className="navbar__button block relative lg:my-auto dark:text-neutral-200">
               Iniciar Sesión
             </button>
             <button
               data-te-ripple-init
-              data-te-ripple-color="light"
+              data-te-ripple-color="dark"
               className="navbar__alternativeButton relative lg:my-auto"
             >
               Registrarse
