@@ -1,14 +1,10 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faBars } from '@fortawesome/free-solid-svg-icons'
-import { Collapse, Dropdown, Ripple, Rating, initTE } from 'tw-elements';
-import { useEffect } from 'react';
+
 import './Header.css';
 
 export default function Header() {
-  useEffect(() => {
-    initTE({ Collapse, Dropdown, Ripple, Rating });
-  }, []);
 
   return (
     <nav

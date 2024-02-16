@@ -28,7 +28,8 @@ export default function SearchBar() {
                             hover:outline-[2px]
                             hover:outline-red-500 
                             hover:bg-primary-1 
-                            hover:text-white'
+                            hover:text-white
+                            shadow-md '
                             >
                         <p className='hidden lg:block'>Filtrar</p>
                         <FontAwesomeIcon className="ml-0 lg:ml-1" icon={faFilter} />
