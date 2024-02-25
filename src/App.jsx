@@ -1,11 +1,11 @@
 import './App.css'
-import SearchPage from './Pages/SearchPage'
+import DetailsPage from './Pages/DetailsPage'
 
 function App() {
 
   return (
     <>
-      <SearchPage/>
+      <DetailsPage/>
     </>
   )
 }
