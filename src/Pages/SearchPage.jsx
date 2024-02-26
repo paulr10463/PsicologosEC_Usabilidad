@@ -1,4 +1,4 @@
-import Header from '../components/Header/header'
+import Header from '../components/Header/Header'
 import SearchBar from '../components/SearchBar/SearchBar'
 import PsychologistSearchElement from '../components/PsychologistSearchElement/PsychologistSearchElement';
 import Footer from '../components/Footer/Footer';

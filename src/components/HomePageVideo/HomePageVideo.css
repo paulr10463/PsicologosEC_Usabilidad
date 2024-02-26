@@ -1,0 +1,18 @@
+.psychologist-video {
+    background-color: var(--primary-1-color);
+}
+
+.psychologist-title {
+    color: white;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+  
+
+  
