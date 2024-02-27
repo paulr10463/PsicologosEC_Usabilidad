@@ -11,7 +11,7 @@ export default function PshychologistDetails() {
         <div className='w-full px-3'>
         <div className='flex-col md:flex-row m-4 border-borderColor border-2 rounded-xl flex max-w-[1800px] mx-auto'>
             <div className='flex flex-col md:w-[30%] items-center justify-start pb-5'>
-                <img
+                <img tabIndex={0}
                     className="rounded-full h-auto w-[100%] object-cover max-w-[5rem] mt-3"
                     src="https://www.psicologos.com.ec/imagenes-ok/2018-09-14_16-24-33_ana-lucia.jpg" alt="Foto de psicólogo" />
                 <Rating />
@@ -34,32 +34,32 @@ export default function PshychologistDetails() {
                     </div>
                 </div>
                 <div className='flex items-center justify-between mb-2'>
-                    <h1 className='text-sm font-bold text-black'>Costo</h1>
-                    <div className='text-lg text-center font-medium ml-5 w-full min-w-[7rem] py-2 px-4 bg-primary-5 rounded-full text-white'>
-                        $30.00
+                    <h1 tabIndex="0" className='text-sm font-bold text-black'>Costo</h1>
+                    <div className='text-lg text-center font-medium ml-5 w-full min-w-[7rem] py-2 px-4 bg-primary-5 rounded-full text-white' >
+                        <h2 tabIndex="0" className='text-sm font-bold text-black'>$30.00</h2>
                     </div>
                 </div>
                 <div className='flex items-center justify-between mb-2'>
-                    <h1 className='text-sm font-bold text-black'>Compartir con un amigo:</h1>
+                    <h1 tabIndex="0" className='text-sm font-bold text-black'>Compartir con un amigo:</h1>
                 </div>
                 <div className='text-[0.7rem] bg-terciary-2 text-white rounded-xl px-3 py-1'>
                     <div className='flex justify-between'>
-                        <button className='flex items-center justify-center py-1 rounded-full text-black'>
+                        <button className='flex items-center justify-center py-1 rounded-full text-black' aria-label="Whatsapp">
                             <FontAwesomeIcon className='p-2 rounded-full' icon={faWhatsapp} size="2x" />
                         </button>
-                        <button className='flex items-center justify-center py-1 rounded-full text-black'>
+                        <button className='flex items-center justify-center py-1 rounded-full text-black' aria-label="Facebook">
                             <FontAwesomeIcon className='p-2 rounded-full' icon={faFacebookF} size="2x" />
                         </button>
-                        <button className='flex items-center justify-center py-1 rounded-full text-black'>
+                        <button className='flex items-center justify-center py-1 rounded-full text-black' aria-label="Instagram">
                             <FontAwesomeIcon className='p-2 rounded-full' icon={faInstagram} size="2x" />
                         </button>
-                        <button className='flex items-center justify-center py-1 rounded-full text-black'>
+                        <button className='flex items-center justify-center py-1 rounded-full text-black' aria-label="Telegram">
                             <FontAwesomeIcon className='p-2 rounded-full' icon={faTelegram} size="2x" />
                         </button>
-                        <button className='flex items-center justify-center py-1 rounded-full text-black'>
+                        <button className='flex items-center justify-center py-1 rounded-full text-black' aria-label="Tiktok">
                             <FontAwesomeIcon className='p-2 rounded-full' icon={faTiktok} size="2x" />
                         </button>
-                        <button className='flex items-center justify-center py-1 rounded-full text-black'>
+                        <button className='flex items-center justify-center py-1 rounded-full text-black' aria-label="TwitterX">
                             <FontAwesomeIcon className='p-2 rounded-full' icon={faXTwitter} size="2x" />
                         </button>
                     </div>
@@ -67,11 +67,11 @@ export default function PshychologistDetails() {
             </div>
             <div className='flex flex-col md:w-[70%] bg-white md:rounded-tr-xl rounded-br-xl rounded-bl-xl md:rounded-bl-none py-3 px-5'>
                 <div className='flex justify-between mb-2'>
-                    <div className='flex flex-col text-normal text-center w-3/5 md:w-[60%] bg-primary-3.5 rounded-full px-5'>
-                        <h1 className='text-lg font-medium text-white'>Gustavo Valarezo</h1>
+                    <div className='justify-center flex flex-col text-normal text-center w-[60%] bg-primary-3.5 rounded-full px-5'>
+                        <h1 tabIndex="0" className='text-lg font-medium text-white'>Gustavo Valarezo</h1>
                     </div>
-                    <div className='flex flex-col text-normal text-center w-1/3 md:w-[38%] bg-primary-3.5 rounded-full px-5'>
-                        <h1 className='text-lg font-medium text-white'>Quito, Cumbayá</h1>
+                    <div className='justify-center flex flex-col text-normal text-center w-[38%] bg-primary-3.5 rounded-full px-5'>
+                        <h1 tabIndex="0" className='text-lg font-medium text-white'>Quito, Cumbayá</h1>
                     </div>
                 </div>
                 <div className='bg-primary-5 w-full rounded-2xl'>
@@ -86,7 +86,7 @@ export default function PshychologistDetails() {
 
                         <div className='text-[0.7rem] lg:w-[100%] bg-primary-3.5 px-4 py-4 rounded-2xl shadow-md leading-3'>
                             <div>
-                                <h1 className='text-xm font-medium text-white mb-2'>Formación</h1>
+                                <h1 tabIndex="0" className='text-sm font-medium text-white mb-2'>Formación</h1>
                             </div>
                             
                             <div id="FormationAccordions">
@@ -101,10 +101,10 @@ export default function PshychologistDetails() {
                                             aria-expanded="false"
                                             aria-controls="collapseOne">
                                                 Université Paul Valery Montpellier 3 : Máster (BAC+5): Teoría, clínica y ética del Psicoanálisis. Oct 2021-Oct. 2023. Título aprobado, por validar en SENESCYT.
-                                            <span
-                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4">
+                                            <button
+                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label="Acordión desplegable">
                                                 <FontAwesomeIcon className='p-2 rounded-full' icon={faChevronDown} size="2x" />
-                                            </span>
+                                            </button>
                                         </button>
                                     </h2>
                                     <div
@@ -129,10 +129,10 @@ export default function PshychologistDetails() {
                                             aria-expanded="false"
                                             aria-controls="collapseTwo">
                                                     Institut International d’Études Françaises Université de Strasbourg, Estrasburgo- Francia Sept 2018-Jun 2019 Estudios culturales y diplomado C2.
-                                            <span
-                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4">
+                                            <button
+                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label="Acordión desplegable">
                                                 <FontAwesomeIcon className='p-2 rounded-full' icon={faChevronDown} size="2x" />
-                                            </span>
+                                            </button>
                                         </button>
                                     </h2>
                                     <div
@@ -157,10 +157,10 @@ export default function PshychologistDetails() {
                                             aria-expanded="false"
                                             aria-controls="collapseThree">
                                                 PONTIFICIA UNIVERSIDAD CATÓLICA DEL ECUADOR, Quito – Ecuador. Ene 2011 – Dic 2015 Psicólogo clínico. reg. SENESCYT 1027-2018-1936436 Disertación: La relación de las Tecnologías de la Información y Comunicación (TIC) como servomecanismos, con el concepto de narcisismo en la teoría psicoanalítica.
-                                            <span
-                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4">
+                                            <button
+                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label="Acordión desplegable">
                                                 <FontAwesomeIcon className='p-2 rounded-full' icon={faChevronDown} size="2x" />
-                                            </span>
+                                            </button>
                                         </button>
                                     </h2>
                                     <div
@@ -189,7 +189,7 @@ export default function PshychologistDetails() {
 
                         <div className='text-[0.7rem] lg:w-[100%] bg-primary-3.5 px-4 py-4 rounded-2xl shadow-md leading-3'>
                             <div>
-                                <h1 className='text-sm font-medium text-white mb-2'>Experiencia</h1>
+                                <h1 tabIndex={0} className='text-sm font-medium text-white mb-2'>Experiencia</h1>
                             </div>
                             
                             <div id="ExperienceAccordions">
@@ -204,10 +204,10 @@ export default function PshychologistDetails() {
                                             aria-expanded="false"
                                             aria-controls="collapseFour">
                                                 EL BOSQUE ESCUELA Jul 2022- Presente Pedagogías y turismo experienciales.
-                                            <span
-                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4">
+                                            <button
+                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label="Acordión desplegable">
                                                 <FontAwesomeIcon className='p-2 rounded-full' icon={faChevronDown} size="2x" />
-                                            </span>
+                                            </button>
                                         </button>
                                     </h2>
                                     <div
@@ -232,10 +232,10 @@ export default function PshychologistDetails() {
                                             aria-expanded="false"
                                             aria-controls="collapseFive">
                                                 TUTOR DOCTOR Dic. 2013- Feb 2020 Tutorías privadas en cálculo, matemáticas, física, lenguaje.
-                                            <span
-                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4">
+                                            <button
+                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label="Acordión desplegable">
                                                 <FontAwesomeIcon className='p-2 rounded-full' icon={faChevronDown} size="2x" />
-                                            </span>
+                                            </button>
                                         </button>
                                     </h2>
                                     <div
@@ -260,10 +260,10 @@ export default function PshychologistDetails() {
                                             aria-expanded="false"
                                             aria-controls="collapseSix">
                                                 COLEGIO JOSÉ ENGLING. Quito – Ecuador Feb. 2016-Jun. 2018 Psicólogo Sección secundaria.
-                                            <span
-                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4">
+                                            <button
+                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label="Acordión desplegable">
                                                 <FontAwesomeIcon className='p-2 rounded-full' icon={faChevronDown} size="2x" />
-                                            </span>
+                                            </button>
                                         </button>
                                     </h2>
                                     <div
@@ -294,22 +294,22 @@ export default function PshychologistDetails() {
 
                         <div className='text-[0.7rem] lg:w-[100%] bg-primary-3.5 px-4 py-4 rounded-2xl shadow-md leading-3'>
                             <div>
-                                <h1 className='text-sm font-medium text-white mb-2'>Especialidades</h1>
+                                <h1 tabIndex={0} className='text-sm font-medium text-white mb-2'>Especialidades</h1>
                             </div>
-                            <div className='flex justify-between'>
-                                <div className='text-[0.7rem] text-white text-center lg:w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
-                                    Psicoanálisis
+                            <div className='flex justify-evenly'>
+                                <div className='text-[0.7rem] text-white text-center w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
+                                    <h2 tabIndex={0}>Psicoanálisis</h2>
                                 </div>
-                                <div className='text-[0.7rem] text-white text-center lg:w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
-                                    Psicoanálisis lacaniano
+                                <div className='text-[0.7rem] text-white text-center w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
+                                    <h2 tabIndex={0}>Psicoanálisis lacaniano</h2>
                                 </div>
                             </div>
-                            <div className='flex justify-between'>
-                                <div className='text-[0.7rem] text-white text-center lg:w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
-                                    Psicopedagogia
+                            <div className='flex justify-evenly'>
+                                <div className='text-[0.7rem] text-white text-center w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
+                                    <h2 tabIndex={0}>Psicopedagogia</h2>
                                 </div>
-                                <div className='text-[0.7rem] text-white text-center lg:w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
-                                    Psicoterapia psicoanalítica
+                                <div className='text-[0.7rem] text-white text-center w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
+                                    <h2 tabIndex={0}>Psicoterapia psicoanalítica</h2>
                                 </div>
                             </div>
                             
@@ -327,28 +327,28 @@ export default function PshychologistDetails() {
 
                         <div className='text-[0.7rem] lg:w-[100%] bg-primary-3.5 px-4 py-4 rounded-2xl shadow-md leading-3'>
                             <div>
-                                <h1 className='text-sm font-medium text-white mb-2'>Tratamientos</h1>
+                                <h1 tabIndex={0} className='text-sm font-medium text-white mb-2'>Tratamientos</h1>
                             </div>
-                            <div className='flex justify-between'>
-                                <div className='text-[0.7rem] text-white text-center lg:w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
-                                    Adicción a internet
+                            <div className='flex justify-evenly'>
+                                <div className='text-[0.7rem] text-white text-center w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
+                                    <h2 tabIndex={0}>Adicción a internet</h2>
                                 </div>
-                                <div className='text-[0.7rem] text-white text-center lg:w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
-                                    Alcoholismo
+                                <div className='text-[0.7rem] text-white text-center w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
+                                    <h2 tabIndex={0}>Alcoholismo</h2>
                                 </div>
                             </div>
-                            <div className='flex justify-between'>
-                                <div className='text-[0.7rem] text-white text-center lg:w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
-                                    Aborto
+                            <div className='flex justify-evenly'>
+                                <div className='text-[0.7rem] text-white text-center w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
+                                    <h2 tabIndex={0}>Aborto</h2>
                                 </div>
-                                <div className='text-[0.7rem] text-white text-center lg:w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
-                                    Ansiedad
+                                <div className='text-[0.7rem] text-white text-center w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
+                                    <h2 tabIndex={0}>Ansiedad</h2>
                                 </div>
                             </div>
 
-                            <div className='flex justify-between'>
-                                <div className='text-[0.7rem] text-white text-center lg:w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
-                                    Depresión
+                            <div className='flex justify-evenly'>
+                                <div className='text-[0.7rem] text-white text-center w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
+                                    <h2 tabIndex={0}>Depresión</h2>
                                 </div>
                             </div>
                             
@@ -366,14 +366,14 @@ export default function PshychologistDetails() {
 
                         <div className='text-[0.7rem] lg:w-[100%] bg-primary-3.5 px-4 py-4 rounded-2xl shadow-md leading-3'>
                             <div>
-                                <h1 className='text-sm font-medium text-white mb-2'>Tratamientos</h1>
+                                <h1 tabIndex={0} className='text-sm font-medium text-white mb-2'>Idiomas conocidos</h1>
                             </div>
-                            <div className='flex justify-between'>
-                                <div className='text-[0.7rem] text-white text-center lg:w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
-                                    Inglés
+                            <div className='flex justify-evenly'>
+                                <div className='text-[0.7rem] text-white text-center w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
+                                    <h2 tabIndex={0}>Inglés</h2>
                                 </div>
-                                <div className='text-[0.7rem] text-white text-center lg:w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
-                                    Francés
+                                <div className='text-[0.7rem] text-white text-center w-[47%] bg-primary-4 mb-2 px-4 py-4 rounded-2xl shadow-md leading-3'>
+                                    <h2 tabIndex={0}>Francés</h2>
                                 </div>
                             </div>
                             

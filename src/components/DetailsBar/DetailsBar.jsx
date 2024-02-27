@@ -29,13 +29,13 @@ export default function DetailsBar() {
                         hover:bg-primary-1 
                         hover:text-white
                         shadow-md '
-                        >
+                        aria-label="Regresar a lista de psicólogos">
                     <FontAwesomeIcon icon={faAngleLeft} />
                 </button>
             </div>
             <div className='flex items-center justify-center w-full text-white'>
                 <div className='text-lg font-bold'>
-                    <h1>Detalles</h1>
+                    <h1 tabIndex="0">Detalles</h1>
                 </div>
             </div>
         </div>
