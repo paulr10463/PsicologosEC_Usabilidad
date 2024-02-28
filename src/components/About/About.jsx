@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './About.css'
 
 export default function About() {
@@ -5,9 +7,9 @@ export default function About() {
     return (
         <div className="mx-auto">
             <div className="flex justify-center my-4">
-                <button className="navbar__alternativeButton max-w-[6rem] py-5 flex justify-center items-center">
+                <Link to="/search" className="max-w-[6rem] py-5 flex justify-center items-center navbar__alternativeButton">
                     Buscar
-                </button>
+                </Link>
             </div>
 
             <div className="m-4">

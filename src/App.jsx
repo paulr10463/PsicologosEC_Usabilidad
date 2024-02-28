@@ -1,12 +1,18 @@
-import './App.css'
-import HomePage from './Pages/HomePage'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './Pages/HomePage';
+import SearchPage from './Pages/SearchPage';
+import './App.css';
 
 function App() {
 
   return (
-    <>
-      <HomePage/>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/search" element={<SearchPage />} />
+      </Routes>
+    </Router>
   )
 }
 
