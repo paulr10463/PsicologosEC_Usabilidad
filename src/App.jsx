@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import SearchPage from './Pages/SearchPage';
 import './App.css';
-import DetailsPage from './Pages/DetailsPage'
+import DetailsPage from './Pages/DetailsPage';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/search" element={<SearchPage />} />
-        <Route path="/search" element={<DetailsPage />} />
+        <Route path="/details" element={<DetailsPage />} />
       </Routes>
     </Router>
   )
