@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 
@@ -6,10 +6,11 @@ export default function DetailsBar() {
     return (
         <div className='bg-primary-5 px-2 h-8 flex py-1 items-center'>
             <div className=''>
-                <button
-                    data-te-ripple-init
-                    data-te-ripple-color="dark"
-                    className='
+                <Link to="/search" aria-label="Lista de psicólogos">
+                    <button 
+                        data-te-ripple-init
+                        data-te-ripple-color="dark"
+                        className='
                         bg-terciary-1 
                         text-xs 
                         px-2 
@@ -29,9 +30,10 @@ export default function DetailsBar() {
                         hover:bg-primary-1 
                         hover:text-white
                         shadow-md '
-                        aria-label="Regresar a lista de psicólogos">
-                    <FontAwesomeIcon icon={faAngleLeft} />
-                </button>
+                        aria-label="Regresar a lista">
+                        <FontAwesomeIcon icon={faAngleLeft} />
+                    </button>
+                </Link>
             </div>
             <div className='flex items-center justify-center w-full text-white'>
                 <div className='text-lg font-bold'>

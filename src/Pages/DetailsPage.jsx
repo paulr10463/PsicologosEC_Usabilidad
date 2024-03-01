@@ -1,4 +1,4 @@
-import Header from '../components/Header/header'
+import Header from '../components/Header/Header'
 import DetailsBar from '../components/DetailsBar/DetailsBar';
 import Footer from '../components/Footer/Footer';
 import { Collapse, Dropdown, Ripple, Rating, initTE } from 'tw-elements';

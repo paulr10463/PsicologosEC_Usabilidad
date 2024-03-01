@@ -30,7 +30,7 @@ export default function SearchBar() {
                             hover:bg-primary-1 
                             hover:text-white
                             shadow-md '
-                            >
+                    >
                         <p className='hidden lg:block'>Filtrar</p>
                         <FontAwesomeIcon className="ml-0 lg:ml-1" icon={faFilter} />
                     </button>
@@ -38,6 +38,7 @@ export default function SearchBar() {
 
                 <div className="relative flex items-stretch max-w-[25rem] w-full">
                     <input
+                        aria-label="Barra de busqueda por nombre"
                         type="search"
                         className="
                     min-w-[10ch]
@@ -57,12 +58,11 @@ export default function SearchBar() {
                   dark:placeholder:text-neutral-200 
                     dark:focus:border-primary"
                         placeholder="Buscar psicólogos en Ecuador"
-
                         aria-describedby="button-addon1" />
 
                     <button
+                        aria-label="Botón buscar"
                         className="
-                     
                     min-w-[0.1rem]  
                     z-[2] 
                     flex 

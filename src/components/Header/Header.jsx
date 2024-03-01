@@ -11,24 +11,26 @@ export default function Header() {
       className="flex w-full flex-wrap items-center justify-between text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 "
       data-te-navbar-ref>
       <div className="flex w-full flex-wrap justify-between px-3">
-          <a
-            className="mx-2 flex"
-            href="#">
-            <img
-              className="mr-2 h-[3em] max-h-[80px]"
-              src="https://www.psicologos.com.ec/idioma/logo.gif"
-              alt="TE Logo"
-              loading="lazy" />
-          </a>
+        <a tabIndex={0}
+          className="mx-2 flex"
+          href="/">
+          <img
+            className="mr-2 h-[3em] max-h-[80px]"
+            src="https://www.psicologos.com.ec/idioma/logo.gif"
+            alt="Logo de Psicólogos en Ecuador"
+            loading="lazy" />
+        </a>
 
         <button
+          tabIndex={0}
           className="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
           type="button"
           data-te-collapse-init
           data-te-target="#navbarSupportedContent4"
           aria-controls="navbarSupportedContent4"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+          alt="Menú desplegable de opciones iniciales">
           <span className="w-7">
             <FontAwesomeIcon icon={faBars} />
           </span>
@@ -41,13 +43,13 @@ export default function Header() {
           <ul
             className=" list-style-none mr-auto flex flex-col pl-0 lg:mt-0 lg:flex-row lg:items-center"
             data-te-navbar-nav-ref>
-            <li 
+            <li
               className="block mt-3 lg:mt-0 ml-3"
               data-te-nav-item-ref>
               <a
                 className="navbar__button dark:text-neutral-200"
                 aria-current="page"
-                href="#"
+                href="/"
                 data-te-nav-link-ref
               >Inicio</a
               >
@@ -59,7 +61,7 @@ export default function Header() {
                   href="#"
                   data-te-dropdown-toggle-ref
                   aria-expanded="false"
-                  >
+                >
                   Compañía
                   <span className="ml-2 dark:text-neutral-200">
                     <FontAwesomeIcon icon={faChevronDown} />
@@ -95,7 +97,7 @@ export default function Header() {
                   </li>
                 </ul>
               </div>
-              
+
             </li>
             <li
               className="relative mt-3 ml-3 lg:mt-0 lg:ml-0"
