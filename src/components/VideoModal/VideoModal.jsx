@@ -1,7 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
+import { useTranslation } from 'react-i18next';
 
 export default function VideoModal(){
+  const { t } = useTranslation();
+  
   const openModal = () => {
     const modal = document.getElementById('my_modal_2');
     if (modal) {

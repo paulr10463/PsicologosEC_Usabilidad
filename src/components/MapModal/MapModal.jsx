@@ -1,7 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
+import { useTranslation } from 'react-i18next';
 
 export default function MapModal(){
+  const { t } = useTranslation();
+  
   const openModal = () => {
     const modal = document.getElementById('my_modal_1');
     if (modal) {

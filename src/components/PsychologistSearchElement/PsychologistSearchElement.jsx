@@ -3,8 +3,11 @@ import MapModal from '../MapModal/MapModal'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapLocationDot, faPhone, faEnvelope, faLocationDot, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { useTranslation } from 'react-i18next';
 
 export default function PsychologistSearchElement() {
+    const { t } = useTranslation();
+    
     return (
         <div className='w-full px-3'>
         <div className='flex-col md:flex-row m-4 border-borderColor border-2 rounded-xl flex max-w-[1800px] mx-auto'>

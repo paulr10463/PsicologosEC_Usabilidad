@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 export default function Rating() {
+    const { t } = useTranslation();
+
     return (
         <ul tabIndex={0} className="text-yellow-400 text-xs my-1 flex list-none gap-0 p-0" data-te-rating-init>
             <li>

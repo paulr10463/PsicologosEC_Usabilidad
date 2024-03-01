@@ -1,8 +1,10 @@
-
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilter, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 export default function SearchBar() {
+    const { t } = useTranslation();
+
     return (
         <div className='bg-primary-1 px-2 h-8 flex py-1 items-center justify-center'>
             <div className='flex w-full items-center justify-center'>

@@ -1,9 +1,12 @@
 import { faMapLocationDot, faPhone, faEnvelope, faCopyright } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { useTranslation } from 'react-i18next';
 
 import './Footer.css'
 export default function Footer() {
+    const { t } = useTranslation();
+
     return (
         <footer className="footer flex flex-col py-4 px-8 bg-terciary-1">
             <div className='flex flex-col md:flex-row'>

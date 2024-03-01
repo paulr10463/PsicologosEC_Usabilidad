@@ -1,6 +1,8 @@
 import './HomePageVideo.css';
+import { useTranslation } from 'react-i18next';
 
 export default function HomePageVideo() {
+    const { t } = useTranslation();
 
     return (
         <div className="mx-auto p-4 psychologist-video">

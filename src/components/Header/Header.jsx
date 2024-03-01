@@ -1,10 +1,22 @@
-
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faBars } from '@fortawesome/free-solid-svg-icons'
+import { useTranslation } from 'react-i18next';
+import i18n from '../../i18n';
 
 import './Header.css';
 
 export default function Header() {
+  const { t } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
+  // Efecto para cambiar la etiqueta 'lang' cuando cambia el idioma
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
 
   return (
     <nav
@@ -62,7 +74,7 @@ export default function Header() {
                   data-te-dropdown-toggle-ref
                   aria-expanded="false"
                 >
-                  Compañía
+                  Idioma
                   <span className="ml-2 dark:text-neutral-200">
                     <FontAwesomeIcon icon={faChevronDown} />
                   </span>
@@ -74,25 +86,33 @@ export default function Header() {
                   <li>
                     <a
                       className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-xs font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                      href="#"
+                      href="#" onClick={() => changeLanguage('es')}
                       data-te-dropdown-item-ref
-                    >Action</a
+                    >Español</a
                     >
                   </li>
                   <li>
                     <a
                       className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-xs font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                      href="#"
+                      href="#" onClick={() => changeLanguage('en')}
                       data-te-dropdown-item-ref
-                    >Another action</a
+                    >Ingles</a
                     >
                   </li>
                   <li>
                     <a
                       className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-xs font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                      href="#"
+                      href="#" onClick={() => changeLanguage('fr')}
                       data-te-dropdown-item-ref
-                    >Something else here</a
+                    >Frances</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-xs font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                      href="#" onClick={() => changeLanguage('zh')}
+                      data-te-dropdown-item-ref
+                    >Chino</a
                     >
                   </li>
                 </ul>

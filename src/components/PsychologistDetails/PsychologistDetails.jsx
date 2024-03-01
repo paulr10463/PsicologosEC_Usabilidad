@@ -4,8 +4,11 @@ import { faMapLocationDot, faPhone, faEnvelope, faPlayCircle, faGraduationCap, f
 import { faWhatsapp ,faXTwitter, faFacebookF, faInstagram, faTiktok, faTelegram } from '@fortawesome/free-brands-svg-icons'
 import MapModal from '../MapModal/MapModal'
 import VideoModal from '../VideoModal/VideoModal'
+import { useTranslation } from 'react-i18next';
 
 export default function PshychologistDetails() {
+    const { t } = useTranslation();
+
     return (
         
         <div className='w-full px-3'>

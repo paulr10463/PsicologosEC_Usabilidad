@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import { useTranslation } from 'react-i18next';
 
 export default function DetailsBar() {
+    const { t } = useTranslation();
+    
     return (
         <div className='bg-primary-5 px-2 h-8 flex py-1 items-center'>
             <div className=''>

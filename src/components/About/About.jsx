@@ -1,19 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './About.css'
+import { useTranslation } from 'react-i18next';
 
 export default function About() {
+    const { t } = useTranslation();
 
     return (
         <div className="mx-auto">
             <div className="flex justify-center my-4">
                 <Link to="/search" className="max-w-[6rem] py-5 flex justify-center items-center navbar__alternativeButton">
-                    Buscar
+                    {t('Buscar')}
                 </Link>
             </div>
 
             <div className="m-4">
-                <h2 tabIndex={0} className="my-4 font-bold text-3xl">Lista de psicólogos y terapeutas</h2>
+                <h2 tabIndex={0} className="my-4 font-bold text-3xl">{t('Lista de psicólogos y terapeutas')}</h2>
                 <div className="flex flex-col md:flex-row items-center">
                     <img
                         src="images/psicologos-lista.png"
