@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 import { useTranslation } from 'react-i18next';
 
-export default function MapModal(){
+export default function MapModal() {
   const { t } = useTranslation();
-  
+
   const openModal = () => {
     const modal = document.getElementById('my_modal_1');
     if (modal) {
@@ -14,16 +14,16 @@ export default function MapModal(){
 
   return (
     <>
-      <a className="text-[0.6rem] underline ml-2" href="#" onClick={openModal} aria-label="Av. Colón y Tamayo (Desplegar Mapa)">
+      <a className="text-[0.6rem] underline ml-2" href="#" onClick={openModal} aria-label={`Av. Colón y Tamayo (${t('Desplegar Mapa')})`}>
         Av. Colón y Tamayo
       </a>
-      <dialog id="my_modal_1" className="flex-auto text-[0.7rem] bg-primary-4 px-4 py-4 rounded-2xl shadow-md leading-3" aria-label="Mapa de Ubicación Av. Colón y Tamayo">
+      <dialog id="my_modal_1" className="flex-auto text-[0.7rem] bg-primary-4 px-4 py-4 rounded-2xl shadow-md leading-3" aria-label={`${t('Mapa de Ubicación')} Av. Colón y Tamayo`}>
         <div className="modal-box" >
           <div className='flex justify-between'>
             <div className='text-[0.7rem] text-center lg:w-fit bg-primary-6 ml-5 px-4 py-2 rounded-2xl shadow-md leading-3'>
-              <h2 tabIndex="0" className='text-white'>Ubicación</h2>
+              <h2 tabIndex="0" className='text-white'>{t('Ubicación')}</h2>
             </div>
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-9 top-5" onClick={() => document.getElementById('my_modal_1').close()} aria-label="Cerrar">
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-9 top-5" onClick={() => document.getElementById('my_modal_1').close()} aria-label={t('Cerrar')}>
               <FontAwesomeIcon icon={faCircleXmark} className="text-white" size="2x" />
             </button>
           </div>

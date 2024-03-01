@@ -9,7 +9,7 @@ export default function DetailsBar() {
     return (
         <div className='bg-primary-5 px-2 h-8 flex py-1 items-center'>
             <div className=''>
-                <Link to="/search" aria-label="Lista de psicólogos">
+                <Link to="/search" aria-label={t('Lista de psicólogos')}>
                     <button 
                         data-te-ripple-init
                         data-te-ripple-color="dark"
@@ -33,14 +33,14 @@ export default function DetailsBar() {
                         hover:bg-primary-1 
                         hover:text-white
                         shadow-md '
-                        aria-label="Regresar a lista">
+                        aria-label={t('Regresar a lista')}>
                         <FontAwesomeIcon icon={faAngleLeft} />
                     </button>
                 </Link>
             </div>
             <div className='flex items-center justify-center w-full text-white'>
                 <div className='text-lg font-bold'>
-                    <h1 tabIndex="0">Detalles</h1>
+                    <h1 tabIndex="0">{t('Detalles')}</h1>
                 </div>
             </div>
         </div>

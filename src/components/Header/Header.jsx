@@ -29,7 +29,7 @@ export default function Header() {
           <img
             className="mr-2 h-[3em] max-h-[80px]"
             src="https://www.psicologos.com.ec/idioma/logo.gif"
-            alt="Logo de Psicólogos en Ecuador"
+            alt={t('Logo de Psicólogos en Ecuador')}
             loading="lazy" />
         </a>
 
@@ -42,7 +42,7 @@ export default function Header() {
           aria-controls="navbarSupportedContent4"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          alt="Menú desplegable de opciones iniciales">
+          alt={t('Menú desplegable de opciones iniciales')}>
           <span className="w-7">
             <FontAwesomeIcon icon={faBars} />
           </span>
@@ -63,8 +63,7 @@ export default function Header() {
                 aria-current="page"
                 href="/"
                 data-te-nav-link-ref
-              >Inicio</a
-              >
+              >{t('Inicio')}</a>
             </li>
             <li>
               <div className="relative mt-3  ml-3 lg:mt-0 lg:ml-0 " >
@@ -74,7 +73,7 @@ export default function Header() {
                   data-te-dropdown-toggle-ref
                   aria-expanded="false"
                 >
-                  Idioma
+                  {t('Idioma')}
                   <span className="ml-2 dark:text-neutral-200">
                     <FontAwesomeIcon icon={faChevronDown} />
                   </span>
@@ -88,32 +87,28 @@ export default function Header() {
                       className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-xs font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
                       href="#" onClick={() => changeLanguage('es')}
                       data-te-dropdown-item-ref
-                    >Español</a
-                    >
+                    >{t('Español')}</a>
                   </li>
                   <li>
                     <a
                       className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-xs font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
                       href="#" onClick={() => changeLanguage('en')}
                       data-te-dropdown-item-ref
-                    >Ingles</a
-                    >
+                    >{t('Inglés')}</a>
                   </li>
                   <li>
                     <a
                       className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-xs font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
                       href="#" onClick={() => changeLanguage('fr')}
                       data-te-dropdown-item-ref
-                    >Frances</a
-                    >
+                    >{t('Francés')}</a>
                   </li>
                   <li>
                     <a
                       className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-xs font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
                       href="#" onClick={() => changeLanguage('zh')}
                       data-te-dropdown-item-ref
-                    >Chino</a
-                    >
+                    >{t('Chino')}</a>
                   </li>
                 </ul>
               </div>
@@ -127,8 +122,7 @@ export default function Header() {
                 aria-current="page"
                 href="#"
                 data-te-nav-link-ref
-              >Ayuda</a
-              >
+              >{t('Ayuda')}</a>
             </li>
           </ul>
 
@@ -137,14 +131,13 @@ export default function Header() {
               data-te-ripple-init
               data-te-ripple-color="dark"
               className="navbar__button block relative lg:my-auto dark:text-neutral-200">
-              Iniciar Sesión
+              {t('Iniciar Sesión')}
             </button>
             <button
               data-te-ripple-init
               data-te-ripple-color="dark"
-              className="navbar__alternativeButton relative lg:my-auto"
-            >
-              Registrarse
+              className="navbar__alternativeButton relative lg:my-auto">
+              {t('Registrarse')}
             </button>
           </div>
         </div>

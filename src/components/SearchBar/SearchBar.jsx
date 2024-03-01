@@ -33,14 +33,14 @@ export default function SearchBar() {
                             hover:text-white
                             shadow-md '
                     >
-                        <p className='hidden lg:block'>Filtrar</p>
+                        <p className='hidden lg:block'>{t('Filtrar')}</p>
                         <FontAwesomeIcon className="ml-0 lg:ml-1" icon={faFilter} />
                     </button>
                 </div>
 
                 <div className="relative flex items-stretch max-w-[25rem] w-full">
                     <input
-                        aria-label="Barra de busqueda por nombre"
+                        aria-label={t('Barra de busqueda por nombre')}
                         type="search"
                         className="
                     min-w-[10ch]
@@ -57,13 +57,13 @@ export default function SearchBar() {
                     bg-terciary-1
                     dark:border-neutral-600
                     dark:text-neutral-200
-                  dark:placeholder:text-neutral-200 
+                    dark:placeholder:text-neutral-200 
                     dark:focus:border-primary"
-                        placeholder="Buscar psicólogos en Ecuador"
+                        placeholder={t('Buscar psicólogos en Ecuador')}
                         aria-describedby="button-addon1" />
 
                     <button
-                        aria-label="Botón buscar"
+                        aria-label={t('Botón buscar')}
                         className="
                     min-w-[0.1rem]  
                     z-[2] 
@@ -82,15 +82,15 @@ export default function SearchBar() {
                     transition 
                     duration-150 
                     ease-in-out
-                     hover:bg-primary-1 
-                     hover:text-white
-                     hover:shadow-lg 
-                     focus:bg-primary-700 
-                     focus:shadow-lg 
-                     focus:outline-none 
-                     focus:ring-0 
-                     active:bg-primary-800 
-                     active:shadow-lg"
+                    hover:bg-primary-1 
+                    hover:text-white
+                    hover:shadow-lg 
+                    focus:bg-primary-700 
+                    focus:shadow-lg 
+                    focus:outline-none 
+                    focus:ring-0 
+                    active:bg-primary-800 
+                    active:shadow-lg"
                         type="button"
                         id="button-addon1"
                         data-te-ripple-init

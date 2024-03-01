@@ -8,7 +8,7 @@ export default function Rating() {
             <li>
                 <span
                     className="text-primary [&>svg]:h-4 [&>svg]:"
-                    title="Calificación 1: Malo"
+                    title={t('Calificación 1: Malo')}
                     data-te-rating-icon-ref
                     aria-hidden="true">
                     <svg
@@ -28,7 +28,7 @@ export default function Rating() {
             <li>
                 <span
                     className="text-primary [&>svg]:h-4 [&>svg]:w-4"
-                    title="Calificación 2: Deficiente"
+                    title={t('Calificación 2: Deficiente')}
                     data-te-rating-icon-ref
                     aria-hidden="true">
                     <svg
@@ -48,7 +48,7 @@ export default function Rating() {
             <li>
                 <span
                     className="text-primary [&>svg]:h-4 [&>svg]:w-4"
-                    title="Calificación 3: Regular"
+                    title={t('Calificación 3: Regular')}
                     data-te-rating-icon-ref
                     aria-hidden="true">
                     <svg
@@ -68,7 +68,7 @@ export default function Rating() {
             <li>
                 <span
                     className="text-primary [&>svg]:h-4 [&>svg]:w-4"
-                    title="Calificación 4: Bueno"
+                    title={t('Calificación 4: Bueno')}
                     data-te-rating-icon-ref>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ export default function Rating() {
             <li>
                 <span
                     className="text-primary [&>svg]:h-4 [&>svg]:w-4"
-                    title="Calificación 5: Excelente"
+                    title={t('Calificación 5: Excelente')}
                     data-te-rating-icon-ref
                     aria-hidden="true">
                     <svg
