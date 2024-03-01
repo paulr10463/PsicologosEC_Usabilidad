@@ -34,7 +34,7 @@ export default function PsychologistSearchElement() {
                 <div className='flex flex-col md:w-[70%] bg-primary-5 md:rounded-tr-xl rounded-br-xl rounded-bl-xl md:rounded-bl-none py-3 px-5'>
                     <div className='flex items-center justify-between mb-2'>
                         <h1 tabIndex={0} className='text-[2rem] font-medium text-white'>Gustavo Valarezo</h1>
-                        <h2 tabIndex={0} className='text-[1.5rem] font-medium text-primary-2 mr-2 bg-white rounded-full py-[0.2rem] px-4'>$ 30.00</h2>
+                        <h2 tabIndex={0} aria-label={t('Treinta dólares')} className='text-[1.5rem] font-medium text-primary-2 mr-2 bg-white rounded-full py-[0.2rem] px-4'>$ 30.00</h2>
                     </div>
                     <div className='bg-white w-full rounded-2xl'>
                         <div className='flex flex-col lg:flex-row p-3'>

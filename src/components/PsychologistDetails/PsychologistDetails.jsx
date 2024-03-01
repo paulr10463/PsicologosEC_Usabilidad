@@ -39,7 +39,7 @@ export default function PshychologistDetails() {
                 <div className='flex items-center justify-between mb-2'>
                     <h1 tabIndex="0" className='text-sm font-bold text-black'>{t('Costo')}</h1>
                     <div className='text-lg text-center font-medium ml-5 w-full min-w-[7rem] py-2 px-4 bg-primary-5 rounded-full text-white' >
-                        <h2 tabIndex="0" className='text-sm font-bold text-white'>$ 30.00</h2>
+                        <h2 tabIndex="0" aria-label={t('Treinta dólares')} className='text-sm font-bold text-white'>$ 30.00</h2>
                     </div>
                 </div>
                 <div className='flex items-center justify-between mb-2'>

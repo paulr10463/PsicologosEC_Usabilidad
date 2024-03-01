@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faBars } from '@fortawesome/free-solid-svg-icons'
 import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n';
+import { faVolumeMute } from '@fortawesome/free-solid-svg-icons';
 
 import './Header.css';
 
