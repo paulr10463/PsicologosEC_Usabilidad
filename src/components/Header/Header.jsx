@@ -1,20 +1,54 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faBars, faVolumeMute, faVolumeUp } from '@fortawesome/free-solid-svg-icons'
 import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n';
-import { faVolumeMute } from '@fortawesome/free-solid-svg-icons';
 
 import './Header.css';
 
 export default function Header() {
   const { t } = useTranslation();
 
+  const [isMuted, setIsMuted] = useState(false);
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === 'm' && !event.ctrlKey) {
+        setIsMuted((prevIsMuted) => {
+          const newMutedState = !prevIsMuted;
+          toggleAudioMute(newMutedState);
+          event.preventDefault();
+          return newMutedState;
+        });
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, []);
+
+  const handleMuteClick = () => {
+    setIsMuted((prevIsMuted) => {
+      const newMutedState = !prevIsMuted;
+      toggleAudioMute(newMutedState);
+      return newMutedState;
+    });
+  };
+
+  const toggleAudioMute = (muteState) => {
+    const videos = document.querySelectorAll('video');
+    videos.forEach((video) => {
+      video.muted = muteState;
+    });
+  };
+
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
 
-  // Efecto para cambiar la etiqueta 'lang' cuando cambia el idioma
   useEffect(() => {
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
@@ -124,6 +158,21 @@ export default function Header() {
                 href="#"
                 data-te-nav-link-ref
               >{t('Ayuda')}</a>
+            </li>
+            <li
+              className="relative mt-3 ml-3 lg:mt-0 lg:ml-0"
+              data-te-nav-item-ref>
+              <a
+                aria-label={t('Mutear, Atajo: tecla M')}
+                className="navbar__button dark:text-neutral-200"
+                aria-current="page"
+                href="#"
+                data-te-nav-link-ref
+                onClick={handleMuteClick}
+              ><FontAwesomeIcon
+                  icon={isMuted ? faVolumeMute : faVolumeUp}
+                  style={{ cursor: 'pointer' }}
+                /></a>
             </li>
           </ul>
 

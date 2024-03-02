@@ -93,10 +93,10 @@ export default function PshychologistDetails() {
                             </div>
                             
                             <div id="FormationAccordions">
-                                <div class="rounded-2xl shadow-md mb-2 dark:bg-primary-4">
-                                    <h2 class="mb-0" id="headingOne">
+                                <div className="rounded-2xl shadow-md mb-2 dark:bg-primary-4">
+                                    <h2 className="mb-0" id="headingOne">
                                         <button
-                                            class="group relative flex w-full items-center rounded-2xl px-3 py-4 text-left text-xs text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-primary-4 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-primary-4 [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)] dark:[&:not([data-te-collapse-collapsed])]:bg-primary-4 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)]"
+                                            className="group relative flex w-full items-center rounded-2xl px-3 py-4 text-left text-xs text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-primary-4 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-primary-4 [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)] dark:[&:not([data-te-collapse-collapsed])]:bg-primary-4 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)]"
                                             type="button"
                                             data-te-collapse-init
                                             data-te-collapse-collapsed
@@ -105,26 +105,26 @@ export default function PshychologistDetails() {
                                             aria-controls="collapseOne">
                                                 Université Paul Valery Montpellier 3 : Máster (BAC+5): Teoría, clínica y ética del Psicoanálisis. Oct 2021-Oct. 2023. Título aprobado, por validar en SENESCYT.
                                             <button
-                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label={t('Acordeón desplegable con documento/certificado')}>
+                                                className="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label={t('Acordeón desplegable con documento/certificado')}>
                                                 <FontAwesomeIcon className='p-2 rounded-full' icon={faChevronDown} size="2x" />
                                             </button>
                                         </button>
                                     </h2>
                                     <div
                                         id="collapseOne"
-                                        class="!visible hidden"
+                                        className="!visible hidden"
                                         data-te-collapse-item
                                         aria-labelledby="headingOne">
-                                        <div class="text-black px-1 py-3 bg-white rounded-2xl">
+                                        <div className="text-black px-1 py-3 bg-white rounded-2xl">
                                             <a className="text-[0.6rem] underline ml-2" href="">Título de masterado en Teoría, clínica y ética del Psicoanálisis.pdf</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="rounded-2xl shadow-md mb-2 dark:bg-primary-4">
-                                    <h2 class="mb-0" id="headingTwo">
+                                <div className="rounded-2xl shadow-md mb-2 dark:bg-primary-4">
+                                    <h2 className="mb-0" id="headingTwo">
                                         <button
-                                            class="group relative flex w-full items-center rounded-2xl px-3 py-4 text-left text-xs text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-primary-4 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-primary-4 [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)] dark:[&:not([data-te-collapse-collapsed])]:bg-primary-4 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)]"
+                                            className="group relative flex w-full items-center rounded-2xl px-3 py-4 text-left text-xs text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-primary-4 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-primary-4 [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)] dark:[&:not([data-te-collapse-collapsed])]:bg-primary-4 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)]"
                                             type="button"
                                             data-te-collapse-init
                                             data-te-collapse-collapsed
@@ -133,26 +133,26 @@ export default function PshychologistDetails() {
                                             aria-controls="collapseTwo">
                                                     Institut International d’Études Françaises Université de Strasbourg, Estrasburgo- Francia Sept 2018-Jun 2019 Estudios culturales y diplomado C2.
                                             <button
-                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label={t('Acordeón desplegable con documento/certificado')}>
+                                                className="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label={t('Acordeón desplegable con documento/certificado')}>
                                                 <FontAwesomeIcon className='p-2 rounded-full' icon={faChevronDown} size="2x" />
                                             </button>
                                         </button>
                                     </h2>
                                     <div
                                         id="collapseTwo"
-                                        class="!visible hidden"
+                                        className="!visible hidden"
                                         data-te-collapse-item
                                         aria-labelledby="headingTwo">
-                                        <div class="text-black px-1 py-3 bg-white rounded-2xl">
+                                        <div className="text-black px-1 py-3 bg-white rounded-2xl">
                                             <a className="text-[0.6rem] underline ml-2" href="">Título de Estudios culturales y diplomado C2.pdf</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="rounded-2xl shadow-md mb-2 dark:bg-primary-4">
-                                    <h2 class="mb-0" id="headingThree">
+                                <div className="rounded-2xl shadow-md mb-2 dark:bg-primary-4">
+                                    <h2 className="mb-0" id="headingThree">
                                         <button
-                                            class="group relative flex w-full items-center rounded-2xl px-3 py-4 text-left text-xs text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-primary-4 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-primary-4 [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)] dark:[&:not([data-te-collapse-collapsed])]:bg-primary-4 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)]"
+                                            className="group relative flex w-full items-center rounded-2xl px-3 py-4 text-left text-xs text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-primary-4 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-primary-4 [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)] dark:[&:not([data-te-collapse-collapsed])]:bg-primary-4 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)]"
                                             type="button"
                                             data-te-collapse-init
                                             data-te-collapse-collapsed
@@ -161,17 +161,17 @@ export default function PshychologistDetails() {
                                             aria-controls="collapseThree">
                                                 PONTIFICIA UNIVERSIDAD CATÓLICA DEL ECUADOR, Quito – Ecuador. Ene 2011 – Dic 2015 Psicólogo clínico. reg. SENESCYT 1027-2018-1936436 Disertación: La relación de las Tecnologías de la Información y Comunicación (TIC) como servomecanismos, con el concepto de narcisismo en la teoría psicoanalítica.
                                             <button
-                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label={t('Acordeón desplegable con documento/certificado')}>
+                                                className="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label={t('Acordeón desplegable con documento/certificado')}>
                                                 <FontAwesomeIcon className='p-2 rounded-full' icon={faChevronDown} size="2x" />
                                             </button>
                                         </button>
                                     </h2>
                                     <div
                                         id="collapseThree"
-                                        class="!visible hidden"
+                                        className="!visible hidden"
                                         data-te-collapse-item
                                         aria-labelledby="headingThree">
-                                        <div class="text-black px-1 py-3 bg-white rounded-2xl">
+                                        <div className="text-black px-1 py-3 bg-white rounded-2xl">
                                             <a className="text-[0.6rem] underline ml-2" href="">Título de Psicólogo clínico.pdf</a>
                                         </div>
                                     </div>
@@ -196,10 +196,10 @@ export default function PshychologistDetails() {
                             </div>
                             
                             <div id="ExperienceAccordions">
-                                <div class="rounded-2xl shadow-md mb-2 dark:bg-primary-4">
-                                    <h2 class="mb-0" id="headingFour">
+                                <div className="rounded-2xl shadow-md mb-2 dark:bg-primary-4">
+                                    <h2 className="mb-0" id="headingFour">
                                         <button
-                                            class="group relative flex w-full items-center rounded-2xl px-3 py-4 text-left text-xs text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-primary-4 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-primary-4 [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)] dark:[&:not([data-te-collapse-collapsed])]:bg-primary-4 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)]"
+                                            className="group relative flex w-full items-center rounded-2xl px-3 py-4 text-left text-xs text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-primary-4 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-primary-4 [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)] dark:[&:not([data-te-collapse-collapsed])]:bg-primary-4 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)]"
                                             type="button"
                                             data-te-collapse-init
                                             data-te-collapse-collapsed
@@ -208,26 +208,26 @@ export default function PshychologistDetails() {
                                             aria-controls="collapseFour">
                                                 EL BOSQUE ESCUELA Jul 2022- Presente Pedagogías y turismo experienciales.
                                             <button
-                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label={t('Acordeón desplegable con documento/certificado')}>
+                                                className="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label={t('Acordeón desplegable con documento/certificado')}>
                                                 <FontAwesomeIcon className='p-2 rounded-full' icon={faChevronDown} size="2x" />
                                             </button>
                                         </button>
                                     </h2>
                                     <div
                                         id="collapseFour"
-                                        class="!visible hidden"
+                                        className="!visible hidden"
                                         data-te-collapse-item
                                         aria-labelledby="headingFour">
-                                        <div class="text-black px-1 py-3 bg-white rounded-2xl">
+                                        <div className="text-black px-1 py-3 bg-white rounded-2xl">
                                             <a className="text-[0.6rem] underline ml-2" href="">Certificado de trabajo - EL BOSQUE ESCUELA.pdf</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="rounded-2xl shadow-md mb-2 dark:bg-primary-4">
-                                    <h2 class="mb-0" id="headingFive">
+                                <div className="rounded-2xl shadow-md mb-2 dark:bg-primary-4">
+                                    <h2 className="mb-0" id="headingFive">
                                         <button
-                                            class="group relative flex w-full items-center rounded-2xl px-3 py-4 text-left text-xs text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-primary-4 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-primary-4 [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)] dark:[&:not([data-te-collapse-collapsed])]:bg-primary-4 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)]"
+                                            className="group relative flex w-full items-center rounded-2xl px-3 py-4 text-left text-xs text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-primary-4 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-primary-4 [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)] dark:[&:not([data-te-collapse-collapsed])]:bg-primary-4 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)]"
                                             type="button"
                                             data-te-collapse-init
                                             data-te-collapse-collapsed
@@ -236,26 +236,26 @@ export default function PshychologistDetails() {
                                             aria-controls="collapseFive">
                                                 TUTOR DOCTOR Dic. 2013- Feb 2020 Tutorías privadas en cálculo, matemáticas, física, lenguaje.
                                             <button
-                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label={t('Acordeón desplegable con documento/certificado')}>
+                                                className="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label={t('Acordeón desplegable con documento/certificado')}>
                                                 <FontAwesomeIcon className='p-2 rounded-full' icon={faChevronDown} size="2x" />
                                             </button>
                                         </button>
                                     </h2>
                                     <div
                                         id="collapseFive"
-                                        class="!visible hidden"
+                                        className="!visible hidden"
                                         data-te-collapse-item
                                         aria-labelledby="headingFive">
-                                        <div class="text-black px-1 py-3 bg-white rounded-2xl">
+                                        <div className="text-black px-1 py-3 bg-white rounded-2xl">
                                             <a className="text-[0.6rem] underline ml-2" href="">Certificado de trabajo - TUTOR DOCTOR.pdf</a>
                                         </div>
                                     </div>
                                 </div>
                                 
-                                <div class="rounded-2xl shadow-md mb-2 dark:bg-primary-4">
-                                    <h2 class="mb-0" id="headingSix">
+                                <div className="rounded-2xl shadow-md mb-2 dark:bg-primary-4">
+                                    <h2 className="mb-0" id="headingSix">
                                         <button
-                                            class="group relative flex w-full items-center rounded-2xl px-3 py-4 text-left text-xs text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-primary-4 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-primary-4 [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)] dark:[&:not([data-te-collapse-collapsed])]:bg-primary-4 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)]"
+                                            className="group relative flex w-full items-center rounded-2xl px-3 py-4 text-left text-xs text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-primary-4 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-primary-4 [&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)] dark:[&:not([data-te-collapse-collapsed])]:bg-primary-4 dark:[&:not([data-te-collapse-collapsed])]:text-white dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(0,89,121)]"
                                             type="button"
                                             data-te-collapse-init
                                             data-te-collapse-collapsed
@@ -264,17 +264,17 @@ export default function PshychologistDetails() {
                                             aria-controls="collapseSix">
                                                 COLEGIO JOSÉ ENGLING. Quito - Ecuador Feb. 2016-Jun. 2018 Psicólogo Sección secundaria.
                                             <button
-                                                class="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label={t('Acordeón desplegable con documento/certificado')}>
+                                                className="ml-auto shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[primary-4] motion-reduce:transition-none dark:fill-primary-4 dark:group-[[data-te-collapse-collapsed]]:fill-primary-4" aria-label={t('Acordeón desplegable con documento/certificado')}>
                                                 <FontAwesomeIcon className='p-2 rounded-full' icon={faChevronDown} size="2x" />
                                             </button>
                                         </button>
                                     </h2>
                                     <div
                                         id="collapseSix"
-                                        class="!visible hidden"
+                                        className="!visible hidden"
                                         data-te-collapse-item
                                         aria-labelledby="headingSix">
-                                        <div class="text-black px-1 py-3 bg-white rounded-2xl">
+                                        <div className="text-black px-1 py-3 bg-white rounded-2xl">
                                             <a className="text-[0.6rem] underline ml-2" href="">Certificado de trabajo - COLEGIO JOSÉ ENGLING.pdf</a>
                                         </div>
                                     </div>

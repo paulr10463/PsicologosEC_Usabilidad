@@ -1,14 +1,40 @@
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 import { useTranslation } from 'react-i18next';
 
 export default function VideoModal() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [videoKey, setVideoKey] = useState(0);
+
+  const videoSource = (lang) => {
+    switch (lang) {
+      case 'en':
+        return '/video/video-details-en.mp4';
+      case 'fr':
+        return '/video/video-details-fr.mp4';
+      case 'zh':
+        return '/video/video-details-zh.mp4';
+      default:
+        return '/video/video-details-es.mp4';
+    }
+  };
+
+  useEffect(() => {
+    setVideoKey((prevKey) => prevKey + 1);
+  }, [i18n.language]);
 
   const openModal = () => {
     const modal = document.getElementById('my_modal_2');
     if (modal) {
       modal.showModal();
+    }
+  };
+
+  const closeModal = () => {
+    const modal = document.getElementById('my_modal_2');
+    if (modal) {
+      modal.close();
     }
   };
 
@@ -23,23 +49,23 @@ export default function VideoModal() {
             <div className='text-[0.7rem] text-white text-center lg:w-fit bg-primary-6 ml-5 px-4 py-2 rounded-2xl shadow-md leading-3'>
               <h2 tabIndex="0" className="text-white">{t('Presentación')}</h2>
             </div>
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-9 top-5" onClick={() => document.getElementById('my_modal_2').close()} aria-label={t('Cerrar')}>
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-9 top-5" onClick={closeModal} aria-label={t('Cerrar')}>
               <FontAwesomeIcon icon={faCircleXmark} className="text-white" size="2x" />
             </button>
           </div>
           <div className='flex justify-between'>
-            <iframe
+            <video
+              key={videoKey}
+              autoPlay={false}
               width="560em"
               height="315em"
-              src="https://www.youtube.com/embed/iWinjE6iaQY?si=JB_HpCUs4DJdUkQh"
-              title="YouTube video player"
               style={{ margin: '2em', borderRadius: '1em' }}
-              frameborder="0"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              alt={t('Video de presentación del psicólogo')}
-              allowfullscreen>
-
-            </iframe>
+              aria-label={t('Video inicial de Psicólogos Ecuador')}
+              controls
+              className="video">
+              <source src={videoSource(i18n.language)} type="video/mp4"/>
+              {t('Su navegador no soporta la etiqueta de vídeo.')}
+            </video>
           </div>
         </div>
       </dialog>

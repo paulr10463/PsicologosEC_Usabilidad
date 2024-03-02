@@ -17,7 +17,7 @@ export default function Rating() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        class="fill-current">
+                        className="fill-current">
                         <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -37,7 +37,7 @@ export default function Rating() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        class="fill-current">
+                        className="fill-current">
                         <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -57,7 +57,7 @@ export default function Rating() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        class="fill-current">
+                        className="fill-current">
                         <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
