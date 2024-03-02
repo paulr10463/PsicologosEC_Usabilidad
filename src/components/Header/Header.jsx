@@ -63,7 +63,7 @@ export default function Header() {
           href="/">
           <img
             className="mr-2 h-[3em] max-h-[80px]"
-            src="https://www.psicologos.com.ec/idioma/logo.gif"
+            src="images/Logo.png"
             alt={t('Logo de Psicólogos en Ecuador')}
             loading="lazy" />
         </a>

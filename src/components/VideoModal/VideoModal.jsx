@@ -60,7 +60,7 @@ export default function VideoModal() {
               width="560em"
               height="315em"
               style={{ margin: '2em', borderRadius: '1em' }}
-              aria-label={t('Video inicial de Psicólogos Ecuador')}
+              aria-label={t('Video de presentación del psicólogo')}
               controls
               className="video">
               <source src={videoSource(i18n.language)} type="video/mp4"/>
