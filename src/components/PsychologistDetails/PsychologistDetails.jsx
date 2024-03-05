@@ -25,7 +25,7 @@ export default function PshychologistDetails() {
                     </div>
                     <div tabIndex={0} aria-label={t('Teléfono')} className='flex items-center mb-2'>
                         <FontAwesomeIcon className="border-2 border-primary-2 p-1 rounded-full" icon={faPhone} size="2xs" />
-                        <a className="text-[0.6rem] underline ml-2" href="">0983472881</a>
+                        <a className="text-[0.6rem] underline ml-2" href="#">0983472881</a>
                     </div>
                     <div tabIndex={0} aria-label={t('Dirección')} className='flex items-center mb-2'>
                         <FontAwesomeIcon className="border-2 border-primary-2 p-1 rounded-full" icon={faMapLocationDot} size="2xs" />
@@ -33,7 +33,7 @@ export default function PshychologistDetails() {
                     </div>
                     <div tabIndex={0} aria-label={t('Correo')} className='flex items-center mb-2'>
                         <FontAwesomeIcon className="border-2 border-primary-2 p-1 rounded-full" icon={faEnvelope} size="2xs" />
-                        <a className="text-[0.6rem] underline ml-2" href="">gustavo.valarezo@hotmail.com</a>
+                        <a className="text-[0.6rem] underline ml-2" href="#">gustavo.valarezo@hotmail.com</a>
                     </div>
                 </div>
                 <div className='flex items-center justify-between mb-2'>
@@ -116,7 +116,7 @@ export default function PshychologistDetails() {
                                         data-te-collapse-item
                                         aria-labelledby="headingOne">
                                         <div className="text-black px-1 py-3 bg-white rounded-2xl">
-                                            <a className="text-[0.6rem] underline ml-2" href="">Título de masterado en Teoría, clínica y ética del Psicoanálisis.pdf</a>
+                                            <a className="text-[0.6rem] underline ml-2" href="#">Título de masterado en Teoría, clínica y ética del Psicoanálisis.pdf</a>
                                         </div>
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@ export default function PshychologistDetails() {
                                         data-te-collapse-item
                                         aria-labelledby="headingTwo">
                                         <div className="text-black px-1 py-3 bg-white rounded-2xl">
-                                            <a className="text-[0.6rem] underline ml-2" href="">Título de Estudios culturales y diplomado C2.pdf</a>
+                                            <a className="text-[0.6rem] underline ml-2" href="#">Título de Estudios culturales y diplomado C2.pdf</a>
                                         </div>
                                     </div>
                                 </div>
@@ -172,7 +172,7 @@ export default function PshychologistDetails() {
                                         data-te-collapse-item
                                         aria-labelledby="headingThree">
                                         <div className="text-black px-1 py-3 bg-white rounded-2xl">
-                                            <a className="text-[0.6rem] underline ml-2" href="">Título de Psicólogo clínico.pdf</a>
+                                            <a className="text-[0.6rem] underline ml-2" href="#">Título de Psicólogo clínico.pdf</a>
                                         </div>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@ export default function PshychologistDetails() {
                                         data-te-collapse-item
                                         aria-labelledby="headingFour">
                                         <div className="text-black px-1 py-3 bg-white rounded-2xl">
-                                            <a className="text-[0.6rem] underline ml-2" href="">Certificado de trabajo - EL BOSQUE ESCUELA.pdf</a>
+                                            <a className="text-[0.6rem] underline ml-2" href="#">Certificado de trabajo - EL BOSQUE ESCUELA.pdf</a>
                                         </div>
                                     </div>
                                 </div>
@@ -247,7 +247,7 @@ export default function PshychologistDetails() {
                                         data-te-collapse-item
                                         aria-labelledby="headingFive">
                                         <div className="text-black px-1 py-3 bg-white rounded-2xl">
-                                            <a className="text-[0.6rem] underline ml-2" href="">Certificado de trabajo - TUTOR DOCTOR.pdf</a>
+                                            <a className="text-[0.6rem] underline ml-2" href="#">Certificado de trabajo - TUTOR DOCTOR.pdf</a>
                                         </div>
                                     </div>
                                 </div>
@@ -275,7 +275,7 @@ export default function PshychologistDetails() {
                                         data-te-collapse-item
                                         aria-labelledby="headingSix">
                                         <div className="text-black px-1 py-3 bg-white rounded-2xl">
-                                            <a className="text-[0.6rem] underline ml-2" href="">Certificado de trabajo - COLEGIO JOSÉ ENGLING.pdf</a>
+                                            <a className="text-[0.6rem] underline ml-2" href="#">Certificado de trabajo - COLEGIO JOSÉ ENGLING.pdf</a>
                                         </div>
                                     </div>
                                 </div>
